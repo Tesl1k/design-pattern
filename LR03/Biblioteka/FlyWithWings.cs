@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Biblioteka
 {
-    public class DecoyDuck : Duck
+    public class FlyWithWings : FlyBehavior
     {
-        public override string Display()
+        public string Fly()
         {
-            return "Display" + " " + this.GetType();
+            return "Хлоп хлоп хлоп";
         }
     }
 }

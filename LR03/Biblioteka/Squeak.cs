@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace Biblioteka
 {
-    public interface Flyable
+    public class Squeak : QuackBehavior
     {
-        string Fly();
+        public string quack()
+        {
+            return "Пи пи пи";
+        }
     }
 }

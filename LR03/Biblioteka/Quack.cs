@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace Biblioteka
 {
-    abstract public class Duck
-    {        
-        public string Swim()
+    public class Quack : QuackBehavior
+    {
+        public string quack()
         {
-            return "Swim" + " " + this.GetType();
+            return "Кря кря кря";
         }
-        public abstract string Display();
     }
 }

@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Biblioteka
 {
-    public interface Quackable
+    public interface FlyBehavior
     {
-        string Quack();
+        string Fly();
     }
 }

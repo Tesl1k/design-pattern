@@ -12,7 +12,7 @@ namespace Ducks
         static void Main(string[] args)
         {
             RedheadDuck readheadDuck = new RedheadDuck();
-            MallardDuck mallardDuck = new MallardDuck();
+            Duck mallardDuck = new MallardDuck();
             DecoyDuck decoyDuck = new DecoyDuck();
             RubberDuck rubberDuck = new RubberDuck();
 
@@ -22,17 +22,9 @@ namespace Ducks
             {
                 Console.WriteLine(x.Swim());
                 Console.WriteLine(x.Display());
-
-                if (x is Quackable)
-                {
-                    Console.WriteLine((x as  Quackable).Quack());
-                }
-
-                if (x is Flyable)
-                {
-                    Console.WriteLine((x as Flyable).Fly());
-                }
-            }
+                Console.WriteLine(x.performQuack());
+                Console.WriteLine(x.performFly());
+            }           
 
             Console.ReadKey();
         }
