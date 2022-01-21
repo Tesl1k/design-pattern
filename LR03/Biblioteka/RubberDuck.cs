@@ -15,7 +15,7 @@ namespace Biblioteka
 
         public RubberDuck()
         {
-            quackBehavior = new MuteQuack();
+            quackBehavior = new Squeak();
             flyBehavior = new FlyNoWay();
         }
     }

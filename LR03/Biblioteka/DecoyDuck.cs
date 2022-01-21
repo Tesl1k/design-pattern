@@ -15,7 +15,7 @@ namespace Biblioteka
 
         public DecoyDuck()
         {
-            quackBehavior = new Squeak();
+            quackBehavior = new MuteQuack();
             flyBehavior = new FlyNoWay();
         }
     }
