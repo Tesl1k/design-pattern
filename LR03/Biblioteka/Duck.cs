@@ -8,8 +8,8 @@ namespace Biblioteka
 {
     abstract public class Duck
     {
-        public FlyBehavior flyBehavior;
-        public QuackBehavior quackBehavior;
+        protected FlyBehavior flyBehavior;
+        protected QuackBehavior quackBehavior;
         public string Swim()
         {
             return "Swim" + " " + this.GetType();
