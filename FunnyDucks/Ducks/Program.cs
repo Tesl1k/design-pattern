@@ -26,7 +26,7 @@ namespace Ducks
                 Console.WriteLine(x.performFly());
             }
 
-            mallardDuck.SetQuackBehavior = new Squeak();
+            mallardDuck.QQuackBehavior = new Squeak();
             Console.WriteLine(mallardDuck.Display());
             Console.WriteLine(mallardDuck.performQuack());
 

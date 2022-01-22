@@ -25,26 +25,16 @@ namespace Biblioteka
             return flyBehavior.Fly();
         }
 
-        public FlyBehavior SetFlyBehavior
+        public FlyBehavior FFlyBehavior
         {
-            get
-            {
-                return flyBehavior;
-            }
-
             set
             {
                 flyBehavior = value;
             }
         }
 
-        public QuackBehavior SetQuackBehavior
-        {
-            get
-            {
-                return quackBehavior;
-            }
-
+        public QuackBehavior QQuackBehavior
+        {            
             set
             {
                 quackBehavior = value;
