@@ -12,7 +12,7 @@ namespace Biblioteka
         protected QuackBehavior quackBehavior;
         public string Swim()
         {
-            return "Swim" + " " + this.GetType();
+            return "Буль буль буль";
         }
 
         public string performQuack()
@@ -24,6 +24,33 @@ namespace Biblioteka
         {
             return flyBehavior.Fly();
         }
+
+        public FlyBehavior SetFlyBehavior
+        {
+            get
+            {
+                return flyBehavior;
+            }
+
+            set
+            {
+                flyBehavior = value;
+            }
+        }
+
+        public QuackBehavior SetQuackBehavior
+        {
+            get
+            {
+                return quackBehavior;
+            }
+
+            set
+            {
+                quackBehavior = value;
+            }
+        }       
+
 
         public abstract string Display();
     }
